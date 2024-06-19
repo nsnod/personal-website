@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Noah",
   middleName: "",
   lastName: "Snodgrass",
-  message: " Passionate about farting. ",
+  message: " Passionate about building. ",
   icons: [
     {
       image: "fa-github",
@@ -127,19 +127,14 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
+      role: 'Open Source Developer',// Here Add Company Name
+      companylogo: require('../assets/img/pytorch.png'),
+      date: 'June 2024 – Present',
+    }
   ]
 }
 
