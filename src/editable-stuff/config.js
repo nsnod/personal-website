@@ -50,7 +50,7 @@ const repos = {
       reposLength: 0,
       specificRepos: ["DividedWeFallV2"],
       images: [
-        require("./noahsnodgrass.png")
+        require("../assets/img/dwf.png")
       ]
     },
     {
@@ -58,10 +58,10 @@ const repos = {
       reposLength: 0,
       specificRepos: ["TaskPlusPlus", "sarahs-website", "PacketPigeon", "crypto-watchlist-bots"],
       images: [
-        require("./noahsnodgrass.png"),
+        require("../assets/img/taskplusplus.png"),
         require("../assets/img/sarah-website.png"),
-        require("./noahsnodgrass.png"),
-        require("./noahsnodgrass.png")
+        require("../assets/img/pp.png"),
+        require("../assets/img/crypto.png")
       ]
     },
   ],
