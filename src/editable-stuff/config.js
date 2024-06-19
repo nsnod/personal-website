@@ -59,7 +59,7 @@ const repos = {
       specificRepos: ["TaskPlusPlus", "sarahs-website", "PacketPigeon", "crypto-watchlist-bots"],
       images: [
         require("./noahsnodgrass.png"),
-        require("./noahsnodgrass.png"),
+        require("../assets/img/sarah-website.png"),
         require("./noahsnodgrass.png"),
         require("./noahsnodgrass.png")
       ]
