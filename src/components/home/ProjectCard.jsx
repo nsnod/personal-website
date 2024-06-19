@@ -12,10 +12,20 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
+    image, // Add image field
   } = value;
+
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+        {image && (
+          <Card.Img
+            variant="top"
+            src={image}
+            alt={name}
+            style={{ width: '100%', height: '200px', objectFit: 'cover' }} // Adjust width and height
+          />
+        )}
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>

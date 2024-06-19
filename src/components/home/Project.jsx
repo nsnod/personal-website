@@ -12,6 +12,7 @@ const dummyProject = {
   stargazers_count: null,
   languages_url: null,
   pushed_at: null,
+  image: null, // Add image field
 };
 
 const API = "https://api.github.com";
@@ -23,31 +24,39 @@ const Project = ({ heading, gitHubUsers }) => {
     let allRepos = [];
 
     for (const user of gitHubUsers) {
-      const { username, reposLength, specificRepos } = user;
+      const { username, reposLength, specificRepos, images } = user;
       const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
       const specificReposAPI = `${API}/repos/${username}`;
 
       try {
         if (reposLength > 0) {
           const response = await axios.get(allReposAPI);
-          allRepos = [...allRepos, ...response.data.slice(0, reposLength)];
+          const repos = response.data.slice(0, reposLength).map((repo, index) => ({
+            ...repo,
+            image: images ? images[index] : null,
+          }));
+          allRepos = [...allRepos, ...repos];
         }
 
         if (specificRepos && specificRepos.length > 0) {
           const specificReposData = await Promise.all(
-            specificRepos.map(async (repoName) => {
+            specificRepos.map(async (repoName, index) => {
               const { data } = await axios.get(`${specificReposAPI}/${repoName}`);
-              return data;
+              return {
+                ...data,
+                image: images ? images[reposLength + index] : null,
+              };
             })
           );
           allRepos = [...allRepos, ...specificReposData];
         }
       } catch (error) {
-        console.error(error.message);
+        console.error(`Error fetching repos for ${username}:`, error.message);
       }
     }
 
     setProjectsArray(allRepos);
+    console.log("All fetched repos:", allRepos);
   }, [gitHubUsers]);
 
   useEffect(() => {

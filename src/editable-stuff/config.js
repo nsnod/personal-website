@@ -49,11 +49,20 @@ const repos = {
       username: "Jeli04",
       reposLength: 0,
       specificRepos: ["DividedWeFallV2"],
+      images: [
+        require("./noahsnodgrass.png")
+      ]
     },
     {
       username: "nsnod",
       reposLength: 0,
       specificRepos: ["TaskPlusPlus", "sarahs-website", "PacketPigeon", "crypto-watchlist-bots"],
+      images: [
+        require("./noahsnodgrass.png"),
+        require("./noahsnodgrass.png"),
+        require("./noahsnodgrass.png"),
+        require("./noahsnodgrass.png")
+      ]
     },
   ],
 };
