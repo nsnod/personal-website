@@ -14,6 +14,12 @@ const Leadership = ({ heading, message, img, imageSize }) => {
           .carousel-control-next-icon {
             filter: invert(1);
           }
+          .carousel-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 0 auto;
+          }
         `}
       </style>
       <h2 className="display-4 pb-5 text-center">{heading}</h2>
@@ -27,11 +33,9 @@ const Leadership = ({ heading, message, img, imageSize }) => {
               return (
                 <Carousel.Item key={index}>
                   <img
-                    className="d-block w-100"
+                    className="d-block"
                     src={value.img}
                     alt="First slide"
-                    width={imageSize.width}
-                    height={imageSize.height}
                   />
                   <Carousel.Caption style={{
                     color: "#000000",
