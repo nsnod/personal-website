@@ -72,17 +72,17 @@ const leadership = {
   show: true,
   heading: "Leadership",
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+    "During my time at UCR, I held two key leadership positions. I founded Career Cipher, assembling a team of 7 board members. We host sessions for DSA problems and logical puzzles, mock interviews, and resume reviews with industry professionals. As president, I delegate tasks and lead our open source projects. As treasurer of ACM, I manage budgets, organize fundraisers, and plan purchases for events. I also run a club bank account and maintain open communication with ASUCR and BCOE faculty.",
   images: [
     { 
-      img: require("../editable-stuff/noahsnodgrass.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+      img: require("../assets/img/acm.png"), 
+      label: "ACM Treasurer", 
+      paragraph: "March 2023 - Present" 
     },
     { 
-      img: require("../editable-stuff/noahsnodgrass.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+      img: require("../assets/img/careercipher.png"), 
+      label: "Career Cipher President", 
+      paragraph: "August 2023 - Present" 
     },
   ],
   imageSize: {
@@ -127,7 +127,7 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: true,
+  show: false,
   heading: "Experiences",
   data: [
     {
