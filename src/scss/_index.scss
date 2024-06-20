@@ -46,11 +46,19 @@ code {
 
 .navbar-transparent {
   background-color: rgba(255, 255, 255, 0);
-  transition: background-color 0.2s;
+  transition: background-color 1.5s;
 }
 .navbar-white {
-  background-color: rgba(234, 236, 239, 0.81);
-  transition: background-color 0.2s;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color 1.5s;
+}
+.navbar-brand {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.navbar-link {
+  color: white !important;
 }
 .brand {
   color: #363636 !important;
