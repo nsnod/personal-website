@@ -68,17 +68,17 @@ const leadership = {
   show: true,
   heading: "Leadership",
   message:
-    "During my time at UCR, I held two key leadership positions. I founded Career Cipher, assembling a team of 7 board members. We host sessions for DSA problems and logical puzzles, mock interviews, and resume reviews with industry professionals. As president, I delegate tasks and lead our open source projects. As treasurer of ACM, I manage budgets, organize fundraisers, and plan purchases for events. I also run a club bank account and maintain open communication with ASUCR and BCOE faculty.",
+    "While in UCR, I hold key leadership positions as President of Career Cipher and Treasurer of ACM. I founded Career Cipher, assembling a team of 7 board members. We host sessions for DSA problems and logical puzzles, mock interviews, and resume reviews with industry professionals. As president, I delegate tasks and lead our open source projects. As treasurer of ACM, I manage budgets, organize fundraisers, and plan purchases for events. I also run a club bank account and maintain open communication with ASUCR and BCOE faculty.",
   images: [
     { 
       img: require("../assets/img/acm.png"), 
-      label: "March 2023 - Present", 
-      paragraph: "March 2023 - Present" 
+      label: "", 
+      paragraph: "" 
     },
     { 
       img: require("../assets/img/careercipher.png"), 
-      label: "August 2023 - Present", 
-      paragraph: "August 2023 - Present" 
+      label: "", 
+      paragraph: "" 
     },
   ],
   imageSize: {

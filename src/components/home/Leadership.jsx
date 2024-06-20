@@ -7,6 +7,7 @@ const Leadership = ({ heading, message, img, imageSize }) => {
     <Jumbotron
       id="leadership"
       className="bg-light m-0"
+      style={{ position: "relative", overflow: "hidden" }} // Ensure the Jumbotron has overflow hidden
     >
       <style>
         {`
@@ -16,9 +17,12 @@ const Leadership = ({ heading, message, img, imageSize }) => {
           }
           .carousel-item img {
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             height: auto;
             margin: 0 auto;
+          }
+          .carousel-indicators {
+            display: none; /* Hide the carousel indicators */
           }
         `}
       </style>
@@ -28,23 +32,20 @@ const Leadership = ({ heading, message, img, imageSize }) => {
           <p className="lead">{message}</p>
         </div>
         <div className="col-md-7">
-          <Carousel>
+          <Carousel style={{ position: "relative" }}>
             {img.map((value, index) => {
               return (
                 <Carousel.Item key={index}>
                   <img
                     className="d-block"
                     src={value.img}
-                    alt="First slide"
+                    alt={`Slide ${index + 1}`}
                   />
                   <Carousel.Caption style={{
                     color: "#000000",
-                    transform: "translateY(90px)",
                   }}>
                     <h3>{value.label}</h3>
-                    <p>
-                      {value.paragraph}
-                    </p>
+                    <p>{value.paragraph}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
               );
