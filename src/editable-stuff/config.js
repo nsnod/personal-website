@@ -37,10 +37,6 @@ const about = {
 };
 
 // PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
-//      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
-//      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
   heading: "Recent Projects",
@@ -76,12 +72,12 @@ const leadership = {
   images: [
     { 
       img: require("../assets/img/acm.png"), 
-      label: "ACM Treasurer", 
+      label: "March 2023 - Present", 
       paragraph: "March 2023 - Present" 
     },
     { 
       img: require("../assets/img/careercipher.png"), 
-      label: "Career Cipher President", 
+      label: "August 2023 - Present", 
       paragraph: "August 2023 - Present" 
     },
   ],

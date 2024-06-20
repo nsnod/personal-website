@@ -9,6 +9,14 @@ const Leadership = ({ heading, message, img, imageSize }) => {
       className="m-0"
       style={{ backgroundColor: "white" }}
     >
+      <style>
+        {`
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+            filter: invert(1);
+          }
+        `}
+      </style>
       <h2 className="display-4 pb-5 text-center">{heading}</h2>
       <div className="row">
         <div className="col-md-5">
@@ -26,7 +34,10 @@ const Leadership = ({ heading, message, img, imageSize }) => {
                     width={imageSize.width}
                     height={imageSize.height}
                   />
-                  <Carousel.Caption>
+                  <Carousel.Caption style={{
+                    color: "#000000",
+                    transform: "translateY(90px)",
+                  }}>
                     <h3>{value.label}</h3>
                     <p>
                       {value.paragraph}
