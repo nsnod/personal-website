@@ -139,8 +139,8 @@ const experiences = {
 }
 
 // Blog SECTION
-// const blog = {
-//   show: false,
-// };
+const blog = {
+  show: false,
+};
 
 export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
