@@ -19,10 +19,6 @@ const mainBody = {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/noah-snodgrass-502a6a253/",
     },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/sixfourinstem/",
-    },
   ],
 };
 
