@@ -32,6 +32,20 @@ const about = {
   resume: "https://drive.google.com/file/d/1PJGTFK8pfEBAijEGeWghlOlkt-_sWN2F/view?usp=sharing",
 };
 
+// Experience
+const experiences = {
+  show: true,
+  heading: "Experiences",
+  data: [
+    {
+      role: 'CTE Instructor', // Add Company Name
+      companylogo: require('../assets/img/Updated-Give-Back.png'),
+      date: 'September 2024 – Present',
+      message: "Developing and delivering cybersecurity workshops for underrepresented high school students, focusing on practical skills to inspire interest in the CSUSB cyber pathway."
+    }
+  ]
+}
+
 // PROJECTS SECTION
 const repos = {
   show: true,
@@ -118,17 +132,6 @@ const getInTouch = {
   email: "noahsnodgrass1@gmail.com",
 };
 
-const experiences = {
-  show: false,
-  heading: "Experiences",
-  data: [
-    {
-      role: 'Open Source Developer',// Here Add Company Name
-      companylogo: require('../assets/img/pytorch.png'),
-      date: 'June 2024 – Present',
-    }
-  ]
-}
 
 // Blog SECTION
 const blog = {
