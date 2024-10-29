@@ -29,7 +29,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Noah Snodgrass. I am a third year pursuing my Bachelor's Degree in Computer Science at the Univeristy of Riverside California. I'm passionate about Machine Learning, Cyber Security, and the intersection between these two fields.",
-  resume: "https://drive.google.com/file/d/1PJGTFK8pfEBAijEGeWghlOlkt-_sWN2F/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1n7Elz5H_0n2IrMZ_2NEmJd6xK6iW6WAO/view?usp=sharing",
 };
 
 // Experience
@@ -45,34 +45,6 @@ const experiences = {
     }
   ]
 }
-
-// PROJECTS SECTION
-const repos = {
-  show: true,
-  heading: "Recent Projects",
-  gitHubUsers: [
-    {
-      username: "Jeli04",
-      reposLength: 0,
-      specificRepos: ["DividedWeFallV2"],
-      images: [
-        require("../assets/img/dwf.png")
-      ]
-    },
-    {
-      username: "nsnod",
-      reposLength: 0,
-      specificRepos: ["TaskPlusPlus", "sarahs-website", "PacketPigeon", "crypto-watchlist-bots"],
-      images: [
-        require("../assets/img/taskplusplus.png"),
-        require("../assets/img/sarah-website.png"),
-        require("../assets/img/pp.png"),
-        require("../assets/img/crypto.png")
-      ]
-    },
-  ],
-};
-
 // Leadership SECTION
 const leadership = {
   show: true,
@@ -96,6 +68,36 @@ const leadership = {
     height:"450"
   }
 };
+
+// PROJECTS SECTION
+const repos = {
+  show: true,
+  heading: "Recent Projects",
+  gitHubUsers: [
+    {
+      username: "Jeli04",
+      reposLength: 0,
+      specificRepos: ["DividedWeFallV2"],
+      images: [
+        require("../assets/img/dwf.png")
+      ]
+    },
+    {
+      username: "nsnod",
+      reposLength: 0,
+      specificRepos: ["TaskPlusPlus",  "PacketPigeon", "prodclueless", "sarahs-website", "mistcreepsite", "crypto-watchlist-bots", "CTorch"],
+      images: [
+        require("../assets/img/taskplusplus.png"),
+        require("../assets/img/pp.png"),
+        require("../assets/img/prodclueless.png"),
+        require("../assets/img/sarah-website.png"),
+        require("../assets/img/mistcreep.png"),
+        require("../assets/img/crypto.png"),
+      ]
+    },
+  ],
+};
+
 
 // SKILLS SECTION
 const skills = {
