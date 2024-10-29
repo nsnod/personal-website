@@ -41,7 +41,7 @@ const experiences = {
       role: 'CTE Instructor', // Add Company Name
       companylogo: require('../assets/img/Updated-Give-Back.png'),
       date: 'September 2024 – Present',
-      message: "Developing and delivering cybersecurity workshops for underrepresented high school students, focusing on practical skills to inspire interest in the CSUSB cyber pathway."
+      message: "Developing and delivering cybersecurity workshops for high school students facing adverse childhood experiences, with a focus on practical skills to spark interest in the CSUSB cyber pathway and other post-secondary education opportunities in Cybersecurity."
     }
   ]
 }
