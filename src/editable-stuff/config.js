@@ -85,8 +85,9 @@ const repos = {
     {
       username: "nsnod",
       reposLength: 0,
-      specificRepos: ["TaskPlusPlus",  "PacketPigeon", "prodclueless", "sarahs-website", "mistcreepsite", "crypto-watchlist-bots", "CTorch"],
+      specificRepos: ["CTorch", "TaskPlusPlus", "PacketPigeon", "prodclueless", "sarahs-website", "mistcreepsite", "crypto-watchlist-bots"],
       images: [
+        require("../assets/img/CTorch.png"),
         require("../assets/img/taskplusplus.png"),
         require("../assets/img/pp.png"),
         require("../assets/img/prodclueless.png"),
