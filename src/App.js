@@ -44,18 +44,18 @@ const Home = React.forwardRef((props, ref) => {
       {experiences.show && (
         <Experience experiences={experiences}/>
       )}
+        {repos.show && (
+          <Project
+            heading={repos.heading}
+            gitHubUsers={repos.gitHubUsers} // Pass the array directly
+          />
+        )}
       {leadership.show && (
         <Leadership
           heading={leadership.heading}
           message={leadership.message}
           img={leadership.images}
           imageSize={leadership.imageSize}
-        />
-      )}
-      {repos.show && (
-        <Project
-          heading={repos.heading}
-          gitHubUsers={repos.gitHubUsers} // Pass the array directly
         />
       )}
       {skills.show && (
