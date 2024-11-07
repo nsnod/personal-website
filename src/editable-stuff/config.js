@@ -29,7 +29,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Noah Snodgrass. I am a third year pursuing my Bachelor's Degree in Computer Science at the Univeristy of Riverside California. I'm passionate about Machine Learning, Cyber Security, and the intersection between these two fields.",
-  resume: "https://drive.google.com/file/d/1n7Elz5H_0n2IrMZ_2NEmJd6xK6iW6WAO/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1iW6KrPmjH6Axcp3-0NXkCeOUda5xDvoY/view?usp=sharing",
 };
 
 // Experience
